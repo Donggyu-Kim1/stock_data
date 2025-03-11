@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: stock_data
+Version: 0.1
+Requires-Dist: pymysql
+Requires-Dist: SQLAlchemy
+Requires-Dist: python-dotenv
+Dynamic: requires-dist
