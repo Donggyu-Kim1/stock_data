@@ -15,13 +15,13 @@ session = Session()
 benchmark_indices = [
     {
         "index_name": "KOSPI",
-        "index_symbol": "KOSPI",
+        "index_symbol": "1001",
         "country": "KR",
         "description": "한국 종합주가지수",
     },
     {
         "index_name": "KOSDAQ",
-        "index_symbol": "KOSDAQ",
+        "index_symbol": "2001",
         "country": "KR",
         "description": "한국 코스닥지수",
     },
