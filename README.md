@@ -15,7 +15,7 @@
 6. 섹터
 7. 벤치마크 지수 (FK)
     - 한국 : KOSPI, KOSDAQ
-    - 미국 : NASDAQ, DOW, S&P 500
+    - 미국 : S&P 500, NASDAQ, NYSE
     - 향후 BETA, Risk premium 계산 시 활용
 8. 생성일시
 
@@ -297,3 +297,13 @@ VALUES ('NYSE', '^NYSE', 'US', '뉴욕증권거래소(NYSE) 전체 주가지수'
 lxml은 Python에서 HTML과 XML을 빠르게 처리하는 라이브러리입니다.
 
 S&P 500 티커리스트를 확보하기 위해 위키백과를 사용했고, 다른 지수들은 공식 홈페이지를 활용했습니다.
+
+### 3. KOSPI & KOSDAQ 티커 리스트에 섹터(Sector) 추가(산업 데이터 삭제)
+
+KRX 한국거래소에서 특정 시장(KOSPI/KOSDAQ)의 업종(Sector) 정보 크롤링했습니다.
+
+OTP 요청을 후 KRX 데이터를 다운로드했습니다.
+
+인코딩 후 CSV 파일로 저장 및 업데이트하여 해결했습니다.
+
+산업 데이터의 경우, 국내 기업은 구하기 어려운 관계로 sector로 대체했습니다.
