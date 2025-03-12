@@ -5,7 +5,6 @@ erDiagram
         string symbol "종목코드"
         string name "기업명"
         string country "국가"
-        string industry "업종"
         string sector "섹터"
         int benchmark_id FK "벤치마크 지수"
         timestamp created_at "생성일시"

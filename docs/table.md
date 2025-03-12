@@ -6,8 +6,7 @@ CREATE TABLE companies (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     symbol         VARCHAR(20) NOT NULL UNIQUE,  -- 종목코드 (Ticker, 종목코드)
     name           VARCHAR(255) NOT NULL,       -- 기업명
-    country        VARCHAR(50),                 -- 국가 (KR, US 등)
-    industry       VARCHAR(255),                -- 업종
+    country        VARCHAR(50),                 -- 국가 (KR, US)
     sector         VARCHAR(255),                -- 섹터
     benchmark_id   INT NOT NULL,                -- 벤치마크 주가지수
     created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

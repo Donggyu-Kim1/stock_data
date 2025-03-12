@@ -56,7 +56,6 @@ class Company(Base):
     symbol = Column(String(20), unique=True, nullable=False)  # 종목코드
     name = Column(String(255), nullable=False)  # 기업명
     country = Column(String(50))  # 국가
-    industry = Column(String(255))  # 업종
     sector = Column(String(255))  # 섹터
     benchmark_id = Column(
         Integer, ForeignKey("benchmark_indices.id"), nullable=False

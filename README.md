@@ -11,13 +11,12 @@
 2. 종목코드 (Ticker)
 3. 기업명
 4. 국가 (한국: KR, 미국: US)
-5. 업종
-6. 섹터
-7. 벤치마크 지수 (FK)
+5. 섹터
+6. 벤치마크 지수 (FK)
     - 한국 : KOSPI, KOSDAQ
     - 미국 : S&P 500, NASDAQ, NYSE
     - 향후 BETA, Risk premium 계산 시 활용
-8. 생성일시
+7. 생성일시
 
 ---
 
@@ -150,7 +149,6 @@ erDiagram
         string symbol "종목코드"
         string name "기업명"
         string country "국가"
-        string industry "업종"
         string sector "섹터"
         int benchmark_id FK "벤치마크 지수"
         timestamp created_at "생성일시"
@@ -307,3 +305,6 @@ OTP 요청을 후 KRX 데이터를 다운로드했습니다.
 인코딩 후 CSV 파일로 저장 및 업데이트하여 해결했습니다.
 
 산업 데이터의 경우, 국내 기업은 구하기 어려운 관계로 sector로 대체했습니다.
+
+### 4. 주가 및 재무 시계열 데이터 최적화 필요
+
