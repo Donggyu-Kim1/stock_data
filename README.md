@@ -127,6 +127,20 @@
 
 ---
 
+## 벤치마크 가격 데이터 (BENCHMARK_PRICES)
+
+1. ID (인덱스)
+2. 벤치마크 지수 ID (FK)
+3. 날짜 (거래일)
+4. 시가 (Open Price)
+5. 고가 (High Price)
+6. 저가 (Low Price)
+7. 종가 (Close Price)
+8. 수정 종가 (Adjusted Close Price)  
+9. 거래량 (Volume)
+
+---
+
 ## ERD
 
 ```mermaid
@@ -229,7 +243,20 @@ erDiagram
         timestamp created_at "생성일시"
     }
 
+    BENCHMARK_PRICES {
+        int id PK
+        int benchmark_id FK "벤치마크 지수 ID"
+        date date "날짜"
+        decimal open_price "시가"
+        decimal high_price "고가"
+        decimal low_price "저가"
+        decimal close_price "종가"
+        decimal adjusted_close_price "수정 종가"
+        bigint volume "거래량"
+    }
+
     BENCHMARK_INDICES ||--o{ COMPANIES : "benchmark_id"
+    BENCHMARK_INDICES ||--o{ BENCHMARK_PRICES : "benchmark_id"
     COMPANIES ||--o{ STOCK_PRICES : "company_id"
     COMPANIES ||--o{ FINANCIAL_STATEMENTS : "company_id"
     COMPANIES ||--o{ FINANCIAL_RATIOS : "company_id"

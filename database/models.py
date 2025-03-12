@@ -28,7 +28,27 @@ class BenchmarkIndex(Base):
     created_at = Column(TIMESTAMP, server_default=func.current_timestamp())
 
 
-# 2️⃣ 기업 정보 테이블
+# 2️⃣ 벤치마크 가격 데이터 테이블
+class BenchmarkPrice(Base):
+    __tablename__ = "benchmark_prices"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    benchmark_id = Column(
+        Integer, ForeignKey("benchmark_indices.id"), nullable=False
+    )  # 벤치마크 지수 ID
+    date = Column(Date, nullable=False)  # 날짜
+    open_price = Column(DECIMAL(10, 2))  # 시가
+    high_price = Column(DECIMAL(10, 2))  # 고가
+    low_price = Column(DECIMAL(10, 2))  # 저가
+    close_price = Column(DECIMAL(10, 2))  # 종가
+    adjusted_close_price = Column(DECIMAL(10, 2))  # 수정 종가
+    volume = Column(BigInteger)  # 거래량
+
+    # 관계 설정
+    benchmark = relationship("BenchmarkIndex", backref="benchmark_prices")
+
+
+# 3️⃣ 기업 정보 테이블
 class Company(Base):
     __tablename__ = "companies"
 
@@ -47,7 +67,7 @@ class Company(Base):
     benchmark = relationship("BenchmarkIndex", backref="companies")
 
 
-# 3️⃣ 주가 데이터 테이블
+# 4️⃣ 주가 데이터 테이블
 class StockPrice(Base):
     __tablename__ = "stock_prices"
 
@@ -65,7 +85,7 @@ class StockPrice(Base):
     company = relationship("Company", backref="stock_prices")
 
 
-# 4️⃣ 재무 데이터 테이블
+# 5️⃣ 재무 데이터 테이블
 class FinancialStatement(Base):
     __tablename__ = "financial_statements"
 
@@ -96,7 +116,7 @@ class FinancialStatement(Base):
     company = relationship("Company", backref="financial_statements")
 
 
-# 5️⃣ 재무 비율 테이블
+# 6️⃣ 재무 비율 테이블
 class FinancialRatio(Base):
     __tablename__ = "financial_ratios"
 
@@ -134,7 +154,7 @@ class FinancialRatio(Base):
     company = relationship("Company", backref="financial_ratios")
 
 
-# 6️⃣ 벨류에이션 테이블
+# 7️⃣ 벨류에이션 테이블
 class ValuationMetric(Base):
     __tablename__ = "valuation_metrics"
 

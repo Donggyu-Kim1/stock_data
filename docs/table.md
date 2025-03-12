@@ -154,3 +154,21 @@ CREATE TABLE benchmark_indices (
     created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
+
+# 7. 벤치마크 지수 가격 테이블 (benchmark_prices)
+벤체마크 지수 가격 테이블
+```sql
+CREATE TABLE benchmark_prices (
+    id            INT AUTO_INCREMENT PRIMARY KEY,
+    benchmark_id  INT NOT NULL,  -- 외래 키 (벤치마크 지수 ID)
+    date          DATE NOT NULL, -- 날짜
+    open_price    DECIMAL(10,2), -- 시가
+    high_price    DECIMAL(10,2), -- 고가
+    low_price     DECIMAL(10,2), -- 저가
+    close_price   DECIMAL(10,2), -- 종가
+    adjusted_close_price DECIMAL(10,2), -- 수정 종가
+    volume        BIGINT,        -- 거래량
+    FOREIGN KEY (benchmark_id) REFERENCES benchmark_indices(id) ON DELETE CASCADE,
+    UNIQUE (benchmark_id, date) -- 중복 방지
+);
+```
