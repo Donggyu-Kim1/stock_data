@@ -17,7 +17,7 @@ DB_CONFIG = {
 
 
 def get_db_connection():
-    """MySQL 데이터베이스 연결을 반환하는 함수 (PyMySQL)"""
+    """PyMySQL을 사용하여 MySQL 데이터베이스 연결을 반환"""
     try:
         conn = pymysql.connect(**DB_CONFIG)
         print("✅ MySQL 데이터베이스 연결 성공!")
@@ -27,8 +27,16 @@ def get_db_connection():
         return None
 
 
+def get_db_url():
+    """SQLAlchemy에서 사용할 수 있는 MySQL 데이터베이스 URL을 반환"""
+    return f"mysql+pymysql://{DB_CONFIG['user']}:{DB_CONFIG['password']}@{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['database']}"
+
+
 if __name__ == "__main__":
-    # 테스트: DB 연결 확인
+    # 테스트: PyMySQL DB 연결 확인
     connection = get_db_connection()
     if connection:
         connection.close()
+
+    # 테스트: SQLAlchemy DB URL 출력
+    print("✅ SQLAlchemy DB URL:", get_db_url())
