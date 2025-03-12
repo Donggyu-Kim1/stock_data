@@ -40,3 +40,14 @@ if __name__ == "__main__":
 
     # 테스트: SQLAlchemy DB URL 출력
     print("✅ SQLAlchemy DB URL:", get_db_url())
+
+
+"""
+CMD에서 MySQL 들어가기
+
+mysql -u root -p
+
+비밀번호 치기
+
+종료 : quit
+"""
