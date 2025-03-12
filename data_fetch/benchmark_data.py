@@ -38,10 +38,10 @@ benchmark_indices = [
         "description": "미국 NASDAQ 종합지수",
     },
     {
-        "index_name": "DOW JONES",
-        "index_symbol": "^DJI",
+        "index_name": "NYSE",
+        "index_symbol": "^NYA",
         "country": "US",
-        "description": "미국 다우존스 산업평균지수",
+        "description": "뉴욕증권거래소(NYSE) 종합주가지수",
     },
 ]
 

@@ -11,6 +11,7 @@ frozendict==2.4.6
 greenlet==3.1.1
 idna==3.10
 kiwisolver==1.4.8
+lxml==5.3.1
 matplotlib==3.10.1
 multipledispatch==1.0.0
 multitasking==0.0.11
@@ -23,6 +24,7 @@ peewee==3.17.9
 pillow==11.1.0
 platformdirs==4.3.6
 pykrx==1.0.48
+PyMySQL==1.1.1
 pyparsing==3.2.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
@@ -32,6 +34,7 @@ setuptools==76.0.0
 six==1.17.0
 soupsieve==2.6
 SQLAlchemy==2.0.38
+-e git+https://github.com/Donggyu-Kim1/stock_data.git@91f41cb2c63db96219fc061136003c327a0f2661#egg=stock_data
 typing_extensions==4.12.2
 tzdata==2025.1
 urllib3==2.3.0

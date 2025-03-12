@@ -262,3 +262,38 @@ erDiagram
     COMPANIES ||--o{ FINANCIAL_RATIOS : "company_id"
     COMPANIES ||--o{ VALUATION_METRICS : "company_id"
 ```
+
+## 트러블슈팅 정리
+
+### 1. 다우존스에서 뉴욕증권거래소(NYSE) 지수로 변경.
+
+다우존스는 주요 산업 30개 주식이지만, 뉴욕증권거래소는 더 많은 주식을 반영할 수 있습니다.
+
+따라서, 데이터베이스의 변화가 필요하지만 다우존스 데이터를 그냥 삭제하면 **FK 제약 조건(Foreign Key Constraint) 문제**가 발생합니다.
+
+**해결방법**
+
+1. 벤치마크 주가 테이블에서 DOW JONES 데이터 삭제
+```sql
+DELETE FROM BENCHMARK_PRICES 
+WHERE benchmark_id = (SELECT id FROM BENCHMARK_INDICES WHERE index_symbol = '^DJI');
+```
+
+2. 벤치마크 지수 테이블에서 DOW JONES 삭제
+```sql
+DELETE FROM BENCHMARK_INDICES WHERE index_symbol = '^DJI';
+```
+
+3. 새로운 NYSE 벤치마크 추가
+```sql
+INSERT INTO BENCHMARK_INDICES (index_name, index_symbol, country, description, created_at) 
+VALUES ('NYSE', '^NYSE', 'US', '뉴욕증권거래소(NYSE) 전체 주가지수', NOW());
+```
+
+다시 주가 데이터를 다운로드하여 해결
+
+### 2. lxml으로 벤치마크 지수별 티커리스트 확보
+
+lxml은 Python에서 HTML과 XML을 빠르게 처리하는 라이브러리입니다.
+
+S&P 500 티커리스트를 확보하기 위해 위키백과를 사용했고, 다른 지수들은 공식 홈페이지를 활용했습니다.
