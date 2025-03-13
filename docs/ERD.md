@@ -6,13 +6,13 @@ erDiagram
         string name "기업명"
         string country "국가"
         string sector "섹터"
-        int benchmark_id FK "벤치마크 지수"
+        int benchmark_id "벤치마크 지수 ID"
         timestamp created_at "생성일시"
     }
     
     STOCK_PRICES {
-        int id PK
-        int company_id FK "기업 ID"
+        int id PK "AUTO_INCREMENT"
+        int company_id "기업 ID"
         date date "날짜"
         decimal open_price "시가"
         decimal high_price "고가"
@@ -24,7 +24,7 @@ erDiagram
 
     FINANCIAL_STATEMENTS {
         int id PK
-        int company_id FK "기업 ID"
+        int company_id "기업 ID"
         date report_date "보고서 기준일"
         bigint revenue "매출액"
         bigint operating_income "영업이익"
@@ -45,7 +45,7 @@ erDiagram
 
     FINANCIAL_RATIOS {
         int id PK
-        int company_id FK "기업 ID"
+        int company_id "기업 ID"
         date report_date "보고서 기준일"
         decimal current_ratio "유동비율"
         decimal cash_ratio "현금비율"
@@ -69,7 +69,7 @@ erDiagram
 
     VALUATION_METRICS {
         int id PK
-        int company_id FK "기업 ID"
+        int company_id "기업 ID"
         date date "날짜"
         bigint market_cap "시가총액"
         decimal per "주가수익비율"
@@ -99,7 +99,7 @@ erDiagram
 
     BENCHMARK_PRICES {
         int id PK
-        int benchmark_id FK "벤치마크 지수 ID"
+        int benchmark_id "벤치마크 지수 ID"
         date date "날짜"
         decimal open_price "시가"
         decimal high_price "고가"

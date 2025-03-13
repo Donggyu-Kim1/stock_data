@@ -5,13 +5,12 @@ from sqlalchemy import (
     Date,
     DECIMAL,
     BigInteger,
-    ForeignKey,
     Text,
     TIMESTAMP,
+    UniqueConstraint,
 )
-from sqlalchemy.orm import relationship, declarative_base
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.sql import func
-from config.db_config import get_db_connection
 
 Base = declarative_base()
 
@@ -34,8 +33,8 @@ class BenchmarkPrice(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     benchmark_id = Column(
-        Integer, ForeignKey("benchmark_indices.id"), nullable=False
-    )  # 벤치마크 지수 ID
+        Integer, nullable=False
+    )  # 벤치마크 지수 ID (논리적 관계만 유지)
     date = Column(Date, nullable=False)  # 날짜
     open_price = Column(DECIMAL(10, 2))  # 시가
     high_price = Column(DECIMAL(10, 2))  # 고가
@@ -44,8 +43,10 @@ class BenchmarkPrice(Base):
     adjusted_close_price = Column(DECIMAL(10, 2))  # 수정 종가
     volume = Column(BigInteger)  # 거래량
 
-    # 관계 설정
-    benchmark = relationship("BenchmarkIndex", backref="benchmark_prices")
+    # UNIQUE KEY 추가 (benchmark_id + date)
+    __table_args__ = (
+        UniqueConstraint("benchmark_id", "date", name="uq_benchmark_date"),
+    )
 
 
 # 3️⃣ 기업 정보 테이블
@@ -58,20 +59,17 @@ class Company(Base):
     country = Column(String(50))  # 국가
     sector = Column(String(255))  # 섹터
     benchmark_id = Column(
-        Integer, ForeignKey("benchmark_indices.id"), nullable=False
-    )  # 벤치마크 지수
+        Integer, nullable=False
+    )  # 벤치마크 지수 ID (논리적 관계만 유지)
     created_at = Column(TIMESTAMP, server_default=func.current_timestamp())
-
-    # 관계 설정
-    benchmark = relationship("BenchmarkIndex", backref="companies")
 
 
 # 4️⃣ 주가 데이터 테이블
 class StockPrice(Base):
     __tablename__ = "stock_prices"
 
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    company_id = Column(Integer, ForeignKey("companies.id"), nullable=False)  # 기업 ID
+    id = Column(Integer, autoincrement=True)  # AUTO_INCREMENT 유지
+    company_id = Column(Integer, nullable=False)  # 기업 ID (논리적 관계만 유지)
     date = Column(Date, nullable=False)  # 날짜
     open_price = Column(DECIMAL(10, 2))  # 시가
     high_price = Column(DECIMAL(10, 2))  # 고가
@@ -80,8 +78,11 @@ class StockPrice(Base):
     adjusted_close_price = Column(DECIMAL(10, 2))  # 수정 종가
     volume = Column(BigInteger)  # 거래량
 
-    # 관계 설정
-    company = relationship("Company", backref="stock_prices")
+    # PRIMARY KEY 변경 (id, company_id, date)
+    __table_args__ = (
+        UniqueConstraint("company_id", "date", name="uq_company_date"),
+        {"mysql_primary_key": "PRIMARY KEY (id, company_id, date)"},
+    )
 
 
 # 5️⃣ 재무 데이터 테이블
@@ -89,7 +90,7 @@ class FinancialStatement(Base):
     __tablename__ = "financial_statements"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    company_id = Column(Integer, ForeignKey("companies.id"), nullable=False)  # 기업 ID
+    company_id = Column(Integer, nullable=False)  # 기업 ID (논리적 관계만 유지)
     report_date = Column(Date, nullable=False)  # 보고서 기준일
 
     # 재무 데이터
@@ -111,8 +112,10 @@ class FinancialStatement(Base):
     dividend_payout_ratio = Column(DECIMAL(10, 2))  # 배당성향
     ebitda = Column(BigInteger)  # EBITDA
 
-    # 관계 설정
-    company = relationship("Company", backref="financial_statements")
+    # UNIQUE KEY 추가 (company_id + report_date)
+    __table_args__ = (
+        UniqueConstraint("company_id", "report_date", name="uq_company_report"),
+    )
 
 
 # 6️⃣ 재무 비율 테이블
@@ -120,10 +123,10 @@ class FinancialRatio(Base):
     __tablename__ = "financial_ratios"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    company_id = Column(Integer, ForeignKey("companies.id"), nullable=False)
-    report_date = Column(Date, nullable=False)
+    company_id = Column(Integer, nullable=False)  # 기업 ID (논리적 관계만 유지)
+    report_date = Column(Date, nullable=False)  # 보고서 기준일
 
-    # 안정성
+    # 안정성 지표
     current_ratio = Column(DECIMAL(10, 2))  # 유동비율
     cash_ratio = Column(DECIMAL(10, 2))  # 현금비율
     debt_ratio = Column(DECIMAL(10, 2))  # 부채비율
@@ -132,55 +135,9 @@ class FinancialRatio(Base):
     debt_dependency = Column(DECIMAL(10, 2))  # 차입금의존도
     interest_coverage = Column(DECIMAL(10, 2))  # 이자보상배율
 
-    # 수익성
-    gross_margin = Column(DECIMAL(10, 2))  # 매출총이익률
-    ros = Column(DECIMAL(10, 2))  # 매출액순이익률 (ROS)
-    roa = Column(DECIMAL(10, 2))  # 총자산영업이익률 (ROA)
-    roe = Column(DECIMAL(10, 2))  # 자기자본순이익률 (ROE)
-
-    # 활동성
-    asset_turnover = Column(DECIMAL(10, 2))  # 총자산회전율
-    equity_turnover = Column(DECIMAL(10, 2))  # 자기자본회전율
-    inventory_turnover = Column(DECIMAL(10, 2))  # 재고자산회전율
-
-    # 성장성
-    revenue_growth = Column(DECIMAL(10, 2))  # 매출액 증가율
-    asset_growth = Column(DECIMAL(10, 2))  # 총자산 증가율
-    equity_growth = Column(DECIMAL(10, 2))  # 자기자본 증가율
-    sustainable_growth = Column(DECIMAL(10, 2))  # 지속가능성장률
-
-    # 관계 설정
-    company = relationship("Company", backref="financial_ratios")
-
-
-# 7️⃣ 벨류에이션 테이블
-class ValuationMetric(Base):
-    __tablename__ = "valuation_metrics"
-
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    company_id = Column(Integer, ForeignKey("companies.id"), nullable=False)
-    date = Column(Date, nullable=False)
-
-    # 주가 기반 지표
-    market_cap = Column(BigInteger)  # 시가총액
-    per = Column(DECIMAL(10, 2))  # 주가수익비율
-    peg_ratio = Column(DECIMAL(10, 2))  # 성장 고려한 PER (PER / EPS 성장률)
-    pbr = Column(DECIMAL(10, 2))  # 주가순자산비율
-    psr = Column(DECIMAL(10, 2))  # 주가매출비율 (Price / Sales)
-    ev_ebitda = Column(DECIMAL(10, 2))  # EV/EBITDA
-    fcf = Column(BigInteger)  # Free Cash Flow
-
-    # 리스크 및 비용
-    beta = Column(DECIMAL(10, 2))  # 베타값
-    risk_free_rate = Column(DECIMAL(10, 4))  # 무위험자산수익률
-    market_risk_premium = Column(DECIMAL(10, 4))  # 시장 위험 프리미엄
-    cost_of_equity = Column(DECIMAL(10, 2))  # 자기자본 비용 (CARM)
-    wacc = Column(DECIMAL(10, 2))  # 가중평균자본비용 (WACC)
-
-    # 평가 모델
-    ddm = Column(DECIMAL(10, 2))  # 배당할인모형 (DDM)
-    dcf = Column(DECIMAL(10, 2))  # 현금흐름할인모형 (DCF)
-    eva = Column(DECIMAL(10, 2))  # 경제적 부가가치 (EVA)
-
-    # 관계 설정
-    company = relationship("Company", backref="valuation_metrics")
+    # UNIQUE KEY 추가 (company_id + report_date)
+    __table_args__ = (
+        UniqueConstraint(
+            "company_id", "report_date", name="uq_company_financial_ratios"
+        ),
+    )

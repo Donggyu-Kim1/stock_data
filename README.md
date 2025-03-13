@@ -150,13 +150,13 @@ erDiagram
         string name "기업명"
         string country "국가"
         string sector "섹터"
-        int benchmark_id FK "벤치마크 지수"
+        int benchmark_id "벤치마크 지수 ID"
         timestamp created_at "생성일시"
     }
     
     STOCK_PRICES {
-        int id PK
-        int company_id FK "기업 ID"
+        int id PK "AUTO_INCREMENT"
+        int company_id "기업 ID"
         date date "날짜"
         decimal open_price "시가"
         decimal high_price "고가"
@@ -168,7 +168,7 @@ erDiagram
 
     FINANCIAL_STATEMENTS {
         int id PK
-        int company_id FK "기업 ID"
+        int company_id "기업 ID"
         date report_date "보고서 기준일"
         bigint revenue "매출액"
         bigint operating_income "영업이익"
@@ -189,7 +189,7 @@ erDiagram
 
     FINANCIAL_RATIOS {
         int id PK
-        int company_id FK "기업 ID"
+        int company_id "기업 ID"
         date report_date "보고서 기준일"
         decimal current_ratio "유동비율"
         decimal cash_ratio "현금비율"
@@ -213,7 +213,7 @@ erDiagram
 
     VALUATION_METRICS {
         int id PK
-        int company_id FK "기업 ID"
+        int company_id "기업 ID"
         date date "날짜"
         bigint market_cap "시가총액"
         decimal per "주가수익비율"
@@ -243,7 +243,7 @@ erDiagram
 
     BENCHMARK_PRICES {
         int id PK
-        int benchmark_id FK "벤치마크 지수 ID"
+        int benchmark_id "벤치마크 지수 ID"
         date date "날짜"
         decimal open_price "시가"
         decimal high_price "고가"
@@ -308,3 +308,43 @@ OTP 요청을 후 KRX 데이터를 다운로드했습니다.
 
 ### 4. 주가 및 재무 시계열 데이터 최적화 필요
 
+연도별로 데이터 파티션 전략을 사용했습니다.
+
+파티션 전략을 사용한다면 쿼리 성능이 향상됩니다. 분석을 위해 많은 순회가 필요하므로 최적화는 필수적입니다.
+
+그리고 이후 데이터를 적재할 때도 insert 성능도 향상됩니다.
+
+```sql
+ALTER TABLE stock_prices
+PARTITION BY RANGE (YEAR(date)) (
+    PARTITION p2020 VALUES LESS THAN (2021),
+    PARTITION p2021 VALUES LESS THAN (2022),
+    PARTITION p2022 VALUES LESS THAN (2023),
+    PARTITION p2023 VALUES LESS THAN (2024),
+    PARTITION p2024 VALUES LESS THAN (2025),
+    PARTITION p2025 VALUES LESS THAN (2026),
+    PARTITION p_future VALUES LESS THAN MAXVALUE  -- 향후 추가될 데이터 저장
+);
+```
+
+하지만, MySQL은 외래 키 + 파티션은 지원하지 않습니다.
+
+```bash
+ERROR 1506 (HY000): Foreign keys are not yet supported in conjunction with partitionin
+```
+
+따라서, 파티션을 하기 위해 외래키를 삭제하고 id, company_id와 date를 기본키로 설정하여 복합 기본키로 해결했습니다.
+
+이때 AUTO_INCREMENT를 유지하려면 id 값이 첫번째로 와야 합니다. 이후의 값도 uqinue key 설정을 통해 중복 데이터를 방지했습니다.
+
+데이터를 삽입할 때 무결성 체크가 되어야 합니다.
+
+Python 애플리케이션 레벨에서 무결성 검증을 수행하여 잘못된 데이터가 삽입되는 것을 방지할 수 있습니다.
+
+```python
+company = session.query(Company).filter_by(id=company_id).first()
+if company:
+    insert_stock_price(company_id, date, open_price, close_price)
+else:
+    print("잘못된 company_id입니다!")
+```
