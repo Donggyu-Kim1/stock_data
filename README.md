@@ -348,3 +348,24 @@ if company:
 else:
     print("잘못된 company_id입니다!")
 ```
+
+### 5. 상장폐지 종목도 추가됨 문제, 주가 데이터 없는 기업들 삭제
+
+주가 데이터 없는 기업들 확인
+
+```sql
+SELECT c.id, c.symbol
+FROM companies c
+LEFT JOIN stock_prices sp ON c.id = sp.company_id
+WHERE sp.id IS NULL;
+```
+
+MySQL에서는 DELETE 또는 UPDATE할 테이블을 같은 서브쿼리에서 직접 참조할 수 없습니다.
+
+-> join으로 해결
+
+```sql
+DELETE c FROM companies c
+LEFT JOIN stock_prices sp ON c.id = sp.company_id
+WHERE sp.id IS NULL;
+```

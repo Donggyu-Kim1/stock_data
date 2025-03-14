@@ -1,15 +1,22 @@
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
-from config.db_config import get_db_connection
+from config.db_config import get_db_url
 from database.models import Company, StockPrice  # 모델 불러오기
 
-# 주식 데이터 불러오기
+import numpy as np
 import yfinance as yf
 from pykrx import stock
 from datetime import datetime, timedelta
 
-engine = create_engine(get_db_connection())
+engine = create_engine(get_db_url())
 Session = sessionmaker(bind=engine)
+
+
+def convert_nan_to_none(value):
+    """NaN 값을 None으로 변환 (MySQL DECIMAL 타입 대응)"""
+    if isinstance(value, float) and np.isnan(value):
+        return None
+    return value
 
 
 def get_companies():
@@ -42,12 +49,12 @@ def fetch_us_stock_data(symbol):
             stock_data.append(
                 {
                     "date": date.date(),
-                    "open_price": row["Open"],
-                    "high_price": row["High"],
-                    "low_price": row["Low"],
-                    "close_price": row["Close"],
-                    "adjusted_close_price": row["Adj Close"],
-                    "volume": row["Volume"],
+                    "open_price": convert_nan_to_none(row["Open"]),
+                    "high_price": convert_nan_to_none(row["High"]),
+                    "low_price": convert_nan_to_none(row["Low"]),
+                    "close_price": convert_nan_to_none(row["Close"]),
+                    "adjusted_close_price": convert_nan_to_none(row["Close"]),
+                    "volume": convert_nan_to_none(row["Volume"]),
                 }
             )
 
@@ -58,7 +65,7 @@ def fetch_us_stock_data(symbol):
 
 
 def fetch_kr_stock_data(symbol):
-    """pykrx를 사용하여 한국 주식 데이터를 가져옴"""
+    """pykrx를 사용하여 한국 주식 데이터를 가져옴 (날짜 변환 처리)"""
     try:
         today = datetime.today().strftime("%Y%m%d")
         start_date = (datetime.today() - timedelta(days=5 * 365)).strftime("%Y%m%d")
@@ -71,15 +78,24 @@ def fetch_kr_stock_data(symbol):
 
         stock_data = []
         for date, row in data.iterrows():
+            # ✅ 날짜 형식이 YYYY-MM-DD HH:MM:SS인 경우 자동 변환
+            if isinstance(date, str):
+                try:
+                    date_obj = datetime.strptime(date, "%Y%m%d").date()
+                except ValueError:
+                    date_obj = datetime.strptime(date, "%Y-%m-%d %H:%M:%S").date()
+            else:
+                date_obj = date.date()  # Timestamp 객체라면 변환
+
             stock_data.append(
                 {
-                    "date": datetime.strptime(str(date), "%Y%m%d").date(),
-                    "open_price": row["시가"],
-                    "high_price": row["고가"],
-                    "low_price": row["저가"],
-                    "close_price": row["종가"],
-                    "adjusted_close_price": row["종가"],  # pykrx에는 수정 종가 없음
-                    "volume": row["거래량"],
+                    "date": date_obj,
+                    "open_price": convert_nan_to_none(row["시가"]),
+                    "high_price": convert_nan_to_none(row["고가"]),
+                    "low_price": convert_nan_to_none(row["저가"]),
+                    "close_price": convert_nan_to_none(row["종가"]),
+                    "adjusted_close_price": convert_nan_to_none(row["종가"]),
+                    "volume": convert_nan_to_none(row["거래량"]),
                 }
             )
 
@@ -103,7 +119,7 @@ def is_stock_data_already_stored(session, company_id, date):
 
 
 def save_stock_data(company_id, stock_data):
-    """수집한 주가 데이터를 stock_prices 테이블에 저장"""
+    """주가 데이터를 저장하며, 기존 데이터와 비교하여 다르면 업데이트"""
     session = Session()
     try:
         # company_id 검증
@@ -111,23 +127,49 @@ def save_stock_data(company_id, stock_data):
             print(f"❌ 유효하지 않은 company_id: {company_id}")
             return
 
-        for data in stock_data:
-            # 중복 데이터 검증
-            if is_stock_data_already_stored(session, company_id, data["date"]):
-                print(f"⚠️ {company_id} {data['date']} 데이터 이미 존재, 저장 건너뜀")
-                continue
+        today = datetime.today().date()  # 오늘 날짜
 
-            new_price = StockPrice(
-                company_id=company_id,
-                date=data["date"],
-                open_price=data["open_price"],
-                high_price=data["high_price"],
-                low_price=data["low_price"],
-                close_price=data["close_price"],
-                adjusted_close_price=data["adjusted_close_price"],
-                volume=data["volume"],
+        for data in stock_data:
+            existing_entry = (
+                session.query(StockPrice)
+                .filter_by(company_id=company_id, date=data["date"])
+                .first()
             )
-            session.add(new_price)
+
+            if existing_entry:
+                # ✅ 과거 데이터의 종가(close_price) 또는 거래량(volume)이 다르면 업데이트 수행
+                if (
+                    existing_entry.close_price != data["close_price"]
+                    or existing_entry.volume != data["volume"]
+                ):
+                    existing_entry.open_price = data["open_price"]
+                    existing_entry.high_price = data["high_price"]
+                    existing_entry.low_price = data["low_price"]
+                    existing_entry.close_price = data["close_price"]
+                    existing_entry.adjusted_close_price = data["adjusted_close_price"]
+                    existing_entry.volume = data["volume"]
+                    print(
+                        f"🔄 {company_id} {data['date']} 주가 데이터 업데이트 (변경 감지)"
+                    )
+
+                else:
+                    print(
+                        f"⚠️ {company_id} {data['date']} 기존 데이터와 동일, 업데이트 건너뜀"
+                    )
+
+            else:
+                # ✅ 새로운 데이터라면 INSERT 수행
+                new_price = StockPrice(
+                    company_id=company_id,
+                    date=data["date"],
+                    open_price=data["open_price"],
+                    high_price=data["high_price"],
+                    low_price=data["low_price"],
+                    close_price=data["close_price"],
+                    adjusted_close_price=data["adjusted_close_price"],
+                    volume=data["volume"],
+                )
+                session.add(new_price)
 
         session.commit()
         print(f"✅ {company_id} 주가 데이터 저장 완료")

@@ -68,9 +68,9 @@ class Company(Base):
 class StockPrice(Base):
     __tablename__ = "stock_prices"
 
-    id = Column(Integer, autoincrement=True)  # AUTO_INCREMENT 유지
-    company_id = Column(Integer, nullable=False)  # 기업 ID (논리적 관계만 유지)
-    date = Column(Date, nullable=False)  # 날짜
+    id = Column(Integer, primary_key=True, autoincrement=True)  # PK 1
+    company_id = Column(Integer, primary_key=True, nullable=False)  # PK 2
+    date = Column(Date, primary_key=True, nullable=False)  # PK 3
     open_price = Column(DECIMAL(10, 2))  # 시가
     high_price = Column(DECIMAL(10, 2))  # 고가
     low_price = Column(DECIMAL(10, 2))  # 저가
@@ -78,11 +78,8 @@ class StockPrice(Base):
     adjusted_close_price = Column(DECIMAL(10, 2))  # 수정 종가
     volume = Column(BigInteger)  # 거래량
 
-    # PRIMARY KEY 변경 (id, company_id, date)
-    __table_args__ = (
-        UniqueConstraint("company_id", "date", name="uq_company_date"),
-        {"mysql_primary_key": "PRIMARY KEY (id, company_id, date)"},
-    )
+    # UNIQUE KEY 추가 (company_id + date)
+    __table_args__ = (UniqueConstraint("company_id", "date", name="uq_company_date"),)
 
 
 # 5️⃣ 재무 데이터 테이블
