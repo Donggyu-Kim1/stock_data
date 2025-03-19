@@ -92,6 +92,8 @@ class FinancialStatement(Base):
 
     # 재무 데이터
     revenue = Column(BigInteger)  # 매출액
+    cost_of_sales = Column(BigInteger)  # 매출원가
+    gross_profit = Column(BigInteger)  # 매출총이익
     operating_income = Column(BigInteger)  # 영업이익
     net_income = Column(BigInteger)  # 당기순이익
     total_assets = Column(BigInteger)  # 총자산

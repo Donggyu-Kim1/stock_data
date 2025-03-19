@@ -171,6 +171,8 @@ erDiagram
         int company_id "기업 ID"
         date report_date "보고서 기준일"
         bigint revenue "매출액"
+        bigint cost_of_sales "매출원가"
+        bigint gross_profit "매출총이익"
         bigint operating_income "영업이익"
         bigint net_income "당기순이익"
         bigint total_assets "총자산"

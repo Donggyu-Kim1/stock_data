@@ -47,6 +47,8 @@ CREATE TABLE financial_statements (
 
     -- 기본 재무 데이터
     revenue              BIGINT,        -- 매출액
+    cost_of_sales        BIGINT,        -- 매출원가
+    gross_profit         BIGINT,        -- 매출총이익
     operating_income     BIGINT,        -- 영업이익
     net_income           BIGINT,        -- 당기순이익
     total_assets         BIGINT,        -- 총자산
