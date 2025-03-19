@@ -44,9 +44,7 @@ df_cf.columns = [
     "class0",
     "class1",
     "class2",
-] + list(
-    df_cf.columns[7:]
-)  # ✅ 현금흐름표도 동일하게 처리
+] + list(df_cf.columns[7:])
 
 # ✅ 불필요한 컬럼 제거 (index 컬럼 제거)
 df_is.drop(columns=["index"], inplace=True)

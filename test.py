@@ -1,33 +1,36 @@
-import pandas as pd
 import os
+import pandas as pd
 
+# ✅ 저장된 파일 경로 설정
+data_folder = "data"
+is_cleaned_path = os.path.join(data_folder, "손익계산서_정리.csv")
+bs_cleaned_path = os.path.join(data_folder, "재무상태표_정리.csv")
+cf_cleaned_path = os.path.join(data_folder, "현금흐름표_정리.csv")
 
-def fix_sector_column(file_path):
-    """중복된 Sector_x, Sector_y 컬럼을 정리하여 하나의 Sector 컬럼으로 유지"""
-    if not os.path.exists(file_path):
-        print(f"❌ 파일이 존재하지 않습니다: {file_path}")
-        return
+# ✅ CSV 파일 불러오기
+df_is = pd.read_csv(is_cleaned_path)
+df_bs = pd.read_csv(bs_cleaned_path)
+df_cf = pd.read_csv(cf_cleaned_path)
 
-    df = pd.read_csv(file_path)
+# ✅ `label_ko` 데이터만 추출하여 고유 값 리스트 생성
+is_labels = df_is["label_ko"].unique().tolist()
+bs_labels = df_bs["label_ko"].unique().tolist()
+cf_labels = df_cf["label_ko"].unique().tolist()
 
-    # ✅ Sector_x, Sector_y가 존재하는 경우 정리
-    if "Sector_x" in df.columns and "Sector_y" in df.columns:
-        df["Sector"] = df["Sector_x"].combine_first(df["Sector_y"])  # 우선순위 적용
-        df.drop(columns=["Sector_x", "Sector_y"], inplace=True)  # 불필요한 컬럼 제거
+# ✅ 파일로 저장 (각 재무제표의 `label_ko` 목록)
+is_labels_path = os.path.join(data_folder, "손익계산서_항목목록.txt")
+bs_labels_path = os.path.join(data_folder, "재무상태표_항목목록.txt")
+cf_labels_path = os.path.join(data_folder, "현금흐름표_항목목록.txt")
 
-    # ✅ 정리된 CSV 저장
-    df.to_csv(file_path, index=False)
-    print(f"✅ {file_path} 중복 Sector 컬럼 정리 완료! ({len(df)}개)")
+with open(is_labels_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(is_labels))
 
+with open(bs_labels_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(bs_labels))
 
-if __name__ == "__main__":
-    # ✅ CSV 파일 경로
-    DATA_PATH = "data/"
-    KOSPI_FILE = os.path.join(DATA_PATH, "kospi_tickers.csv")
-    KOSDAQ_FILE = os.path.join(DATA_PATH, "kosdaq_tickers.csv")
+with open(cf_labels_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(cf_labels))
 
-    # ✅ KOSPI & KOSDAQ 중복 Sector 정리 실행
-    fix_sector_column(KOSPI_FILE)
-    fix_sector_column(KOSDAQ_FILE)
-
-    print("🎉 KOSPI & KOSDAQ 중복 Sector 컬럼 정리 완료!")
+print(
+    f"✅ `label_ko` 데이터 추출 완료! \n - {is_labels_path} \n - {bs_labels_path} \n - {cf_labels_path}"
+)
