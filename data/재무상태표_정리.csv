@@ -1,0 +1,213 @@
+﻿concept_id,label_ko,label_en,report_date,value
+concept_id,label_ko,label_en,20241231,"('연결재무제표',)"
+ifrs-full_CurrentAssets,유동자산,Current assets,20241231,227062266000000.0
+ifrs-full_CashAndCashEquivalents,현금및현금성자산,Cash and cash equivalents,20241231,53705579000000.0
+ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,Short-term financial instruments,20241231,58909334000000.0
+ifrs-full_CurrentFinancialAssetsAtAmortisedCost,단기상각후원가금융자산,Short-term financial assets at fair value through profit or loss,20241231,0.0
+ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,단기당기손익-공정가치금융자산,Short-term financial assets at fair value through profit or loss,20241231,36877000000.0
+ifrs-full_CurrentTradeReceivables,매출채권,Trade receivables,20241231,43623073000000.0
+dart_ShortTermOtherReceivablesNet,미수금,Non-trade receivables,20241231,9622974000000.0
+ifrs-full_CurrentPrepaidExpenses,선급비용,Prepaid expenses,20241231,3362824000000.0
+ifrs-full_Inventories,재고자산,Inventories,20241231,51754865000000.0
+ifrs-full_OtherCurrentAssets,기타유동자산,Other current assets,20241231,6046740000000.0
+ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정분류자산,Assets held for sale,20241231,0.0
+ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,20241231,287469682000000.0
+ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,Financial assets at fair value through other comprehensive income,20241231,10580932000000.0
+ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치금융자산,Financial assets at fair value through profit or loss,20241231,1175749000000.0
+ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업 투자,Investments in associates and joint ventures,20241231,12592117000000.0
+ifrs-full_PropertyPlantAndEquipment,유형자산,"Property, plant and equipment",20241231,205945209000000.0
+ifrs-full_IntangibleAssetsAndGoodwill,무형자산,Intangible assets,20241231,23738566000000.0
+ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,Net defined benefit assets,20241231,3089571000000.0
+ifrs-full_DeferredTaxAssets,이연법인세자산,Deferred income tax assets,20241231,14236468000000.0
+ifrs-full_OtherNoncurrentAssets,기타비유동자산,Other non-current assets,20241231,16111070000000.0
+ifrs-full_Assets,자산총계,Total assets,20241231,514531948000000.0
+ifrs-full_CurrentLiabilities,유동부채,Current liabilities,20241231,93326299000000.0
+ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,Trade payables,20241231,12370177000000.0
+entity00126380_CurrentLoansReceivedOfCurrentLiabilities,단기차입금,Current loans received,20241231,13172504000000.0
+ifrs-full_OtherCurrentPayables,미지급금,Other payables,20241231,18547365000000.0
+ifrs-full_CurrentAdvances,선수금,Advances received,20241231,1841420000000.0
+dart_ShortTermWithholdings,예수금,Withholdings,20241231,991812000000.0
+ifrs-full_AccrualsClassifiedAsCurrent,미지급비용,Accrued expenses,20241231,29613258000000.0
+ifrs-full_CurrentTaxLiabilities,당기법인세부채,Current income tax liabilities,20241231,4340171000000.0
+ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,Current portion of long-term liabilities,20241231,2207290000000.0
+ifrs-full_CurrentProvisions,충당부채,Provisions,20241231,8216469000000.0
+ifrs-full_OtherCurrentLiabilities,기타유동부채,Other current liabilities,20241231,2025833000000.0
+ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정분류부채,Liabilities held-for-sale,20241231,0.0
+ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,20241231,19013579000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,Debentures,20241231,14530000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,Long-term borrowings,20241231,3935860000000.0
+ifrs-full_OtherNoncurrentPayables,장기미지급금,Long-term other payables,20241231,5510455000000.0
+ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,Net defined benefit liabilities,20241231,521410000000.0
+ifrs-full_DeferredTaxLiabilities,이연법인세부채,Deferred income tax liabilities,20241231,528231000000.0
+ifrs-full_NoncurrentProvisions,장기충당부채,Long-term provisions,20241231,3120044000000.0
+ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,Other non-current liabilities,20241231,5383049000000.0
+ifrs-full_Liabilities,부채총계,Total liabilities,20241231,112339878000000.0
+ifrs-full_EquityAttributableToOwnersOfParent,지배기업 소유주지분,Equity attributable to owners of parent company,20241231,391687603000000.0
+ifrs-full_IssuedCapital,자본금,Issued capital,20241231,897514000000.0
+dart_IssuedCapitalOfPreferredStock,우선주자본금,Preference shares,20241231,119467000000.0
+dart_IssuedCapitalOfCommonStock,보통주자본금,Ordinary shares,20241231,778047000000.0
+ifrs-full_SharePremium,주식발행초과금,Share premium,20241231,4403893000000.0
+ifrs-full_RetainedEarnings,이익잉여금,Retained earnings,20241231,370513188000000.0
+dart_ElementsOfOtherStockholdersEquity,기타자본항목,Other components of equity,20241231,15873008000000.0
+ifrs-full_NoncontrollingInterests,비지배지분,Non-controlling interests,20241231,10504467000000.0
+ifrs-full_Equity,자본총계,Total equity,20241231,402192070000000.0
+ifrs-full_EquityAndLiabilities,부채와자본총계,Equity and liabilities,20241231,514531948000000.0
+concept_id,label_ko,label_en,20231231,"('연결재무제표',)"
+ifrs-full_CurrentAssets,유동자산,Current assets,20231231,195936557000000.0
+ifrs-full_CashAndCashEquivalents,현금및현금성자산,Cash and cash equivalents,20231231,69080893000000.0
+ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,Short-term financial instruments,20231231,22690924000000.0
+ifrs-full_CurrentFinancialAssetsAtAmortisedCost,단기상각후원가금융자산,Short-term financial assets at fair value through profit or loss,20231231,608281000000.0
+ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,단기당기손익-공정가치금융자산,Short-term financial assets at fair value through profit or loss,20231231,27112000000.0
+ifrs-full_CurrentTradeReceivables,매출채권,Trade receivables,20231231,36647393000000.0
+dart_ShortTermOtherReceivablesNet,미수금,Non-trade receivables,20231231,6633248000000.0
+ifrs-full_CurrentPrepaidExpenses,선급비용,Prepaid expenses,20231231,3366130000000.0
+ifrs-full_Inventories,재고자산,Inventories,20231231,51625874000000.0
+ifrs-full_OtherCurrentAssets,기타유동자산,Other current assets,20231231,5038838000000.0
+ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정분류자산,Assets held for sale,20231231,217864000000.0
+ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,20231231,259969423000000.0
+ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,Financial assets at fair value through other comprehensive income,20231231,7481297000000.0
+ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치금융자산,Financial assets at fair value through profit or loss,20231231,1431394000000.0
+ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업 투자,Investments in associates and joint ventures,20231231,11767444000000.0
+ifrs-full_PropertyPlantAndEquipment,유형자산,"Property, plant and equipment",20231231,187256262000000.0
+ifrs-full_IntangibleAssetsAndGoodwill,무형자산,Intangible assets,20231231,22741862000000.0
+ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,Net defined benefit assets,20231231,4905219000000.0
+ifrs-full_DeferredTaxAssets,이연법인세자산,Deferred income tax assets,20231231,10211797000000.0
+ifrs-full_OtherNoncurrentAssets,기타비유동자산,Other non-current assets,20231231,14174148000000.0
+ifrs-full_Assets,자산총계,Total assets,20231231,455905980000000.0
+ifrs-full_CurrentLiabilities,유동부채,Current liabilities,20231231,75719452000000.0
+ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,Trade payables,20231231,11319824000000.0
+entity00126380_CurrentLoansReceivedOfCurrentLiabilities,단기차입금,Current loans received,20231231,7114601000000.0
+ifrs-full_OtherCurrentPayables,미지급금,Other payables,20231231,15324119000000.0
+ifrs-full_CurrentAdvances,선수금,Advances received,20231231,1492602000000.0
+dart_ShortTermWithholdings,예수금,Withholdings,20231231,892441000000.0
+ifrs-full_AccrualsClassifiedAsCurrent,미지급비용,Accrued expenses,20231231,26013273000000.0
+ifrs-full_CurrentTaxLiabilities,당기법인세부채,Current income tax liabilities,20231231,3358715000000.0
+ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,Current portion of long-term liabilities,20231231,1308875000000.0
+ifrs-full_CurrentProvisions,충당부채,Provisions,20231231,6524876000000.0
+ifrs-full_OtherCurrentLiabilities,기타유동부채,Other current liabilities,20231231,2308472000000.0
+ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정분류부채,Liabilities held-for-sale,20231231,61654000000.0
+ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,20231231,16508663000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,Debentures,20231231,537618000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,Long-term borrowings,20231231,3724850000000.0
+ifrs-full_OtherNoncurrentPayables,장기미지급금,Long-term other payables,20231231,5488283000000.0
+ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,Net defined benefit liabilities,20231231,456557000000.0
+ifrs-full_DeferredTaxLiabilities,이연법인세부채,Deferred income tax liabilities,20231231,620549000000.0
+ifrs-full_NoncurrentProvisions,장기충당부채,Long-term provisions,20231231,2878450000000.0
+ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,Other non-current liabilities,20231231,2802356000000.0
+ifrs-full_Liabilities,부채총계,Total liabilities,20231231,92228115000000.0
+ifrs-full_EquityAttributableToOwnersOfParent,지배기업 소유주지분,Equity attributable to owners of parent company,20231231,353233775000000.0
+ifrs-full_IssuedCapital,자본금,Issued capital,20231231,897514000000.0
+dart_IssuedCapitalOfPreferredStock,우선주자본금,Preference shares,20231231,119467000000.0
+dart_IssuedCapitalOfCommonStock,보통주자본금,Ordinary shares,20231231,778047000000.0
+ifrs-full_SharePremium,주식발행초과금,Share premium,20231231,4403893000000.0
+ifrs-full_RetainedEarnings,이익잉여금,Retained earnings,20231231,346652238000000.0
+dart_ElementsOfOtherStockholdersEquity,기타자본항목,Other components of equity,20231231,1280130000000.0
+ifrs-full_NoncontrollingInterests,비지배지분,Non-controlling interests,20231231,10444090000000.0
+ifrs-full_Equity,자본총계,Total equity,20231231,363677865000000.0
+ifrs-full_EquityAndLiabilities,부채와자본총계,Equity and liabilities,20231231,455905980000000.0
+concept_id,label_ko,label_en,20221231,"('연결재무제표',)"
+ifrs-full_CurrentAssets,유동자산,Current assets,20221231,218470581000000.0
+ifrs-full_CashAndCashEquivalents,현금및현금성자산,Cash and cash equivalents,20221231,49680710000000.0
+ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,Short-term financial instruments,20221231,65102886000000.0
+ifrs-full_CurrentFinancialAssetsAtAmortisedCost,단기상각후원가금융자산,Short-term financial assets at fair value through profit or loss,20221231,414610000000.0
+ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,단기당기손익-공정가치금융자산,Short-term financial assets at fair value through profit or loss,20221231,29080000000.0
+ifrs-full_CurrentTradeReceivables,매출채권,Trade receivables,20221231,35721563000000.0
+dart_ShortTermOtherReceivablesNet,미수금,Non-trade receivables,20221231,6149209000000.0
+ifrs-full_CurrentPrepaidExpenses,선급비용,Prepaid expenses,20221231,2867823000000.0
+ifrs-full_Inventories,재고자산,Inventories,20221231,52187866000000.0
+ifrs-full_OtherCurrentAssets,기타유동자산,Other current assets,20221231,6316834000000.0
+ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정분류자산,Assets held for sale,20221231,0.0
+ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,20221231,229953926000000.0
+ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,Financial assets at fair value through other comprehensive income,20221231,11397012000000.0
+ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치금융자산,Financial assets at fair value through profit or loss,20221231,1405468000000.0
+ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업 투자,Investments in associates and joint ventures,20221231,10893869000000.0
+ifrs-full_PropertyPlantAndEquipment,유형자산,"Property, plant and equipment",20221231,168045388000000.0
+ifrs-full_IntangibleAssetsAndGoodwill,무형자산,Intangible assets,20221231,20217754000000.0
+ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,Net defined benefit assets,20221231,5851972000000.0
+ifrs-full_DeferredTaxAssets,이연법인세자산,Deferred income tax assets,20221231,5101318000000.0
+ifrs-full_OtherNoncurrentAssets,기타비유동자산,Other non-current assets,20221231,7041145000000.0
+ifrs-full_Assets,자산총계,Total assets,20221231,448424507000000.0
+ifrs-full_CurrentLiabilities,유동부채,Current liabilities,20221231,78344852000000.0
+ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,Trade payables,20221231,10644686000000.0
+entity00126380_CurrentLoansReceivedOfCurrentLiabilities,단기차입금,Current loans received,20221231,5147315000000.0
+ifrs-full_OtherCurrentPayables,미지급금,Other payables,20221231,17592366000000.0
+ifrs-full_CurrentAdvances,선수금,Advances received,20221231,1314934000000.0
+dart_ShortTermWithholdings,예수금,Withholdings,20221231,1298244000000.0
+ifrs-full_AccrualsClassifiedAsCurrent,미지급비용,Accrued expenses,20221231,29211487000000.0
+ifrs-full_CurrentTaxLiabilities,당기법인세부채,Current income tax liabilities,20221231,4250397000000.0
+ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,Current portion of long-term liabilities,20221231,1089162000000.0
+ifrs-full_CurrentProvisions,충당부채,Provisions,20221231,5844907000000.0
+ifrs-full_OtherCurrentLiabilities,기타유동부채,Other current liabilities,20221231,1951354000000.0
+ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정분류부채,Liabilities held-for-sale,20221231,0.0
+ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,20221231,15330051000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,Debentures,20221231,536093000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,Long-term borrowings,20221231,3560672000000.0
+ifrs-full_OtherNoncurrentPayables,장기미지급금,Long-term other payables,20221231,2753305000000.0
+ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,Net defined benefit liabilities,20221231,268370000000.0
+ifrs-full_DeferredTaxLiabilities,이연법인세부채,Deferred income tax liabilities,20221231,5111332000000.0
+ifrs-full_NoncurrentProvisions,장기충당부채,Long-term provisions,20221231,1928518000000.0
+ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,Other non-current liabilities,20221231,1171761000000.0
+ifrs-full_Liabilities,부채총계,Total liabilities,20221231,93674903000000.0
+ifrs-full_EquityAttributableToOwnersOfParent,지배기업 소유주지분,Equity attributable to owners of parent company,20221231,345186142000000.0
+ifrs-full_IssuedCapital,자본금,Issued capital,20221231,897514000000.0
+dart_IssuedCapitalOfPreferredStock,우선주자본금,Preference shares,20221231,119467000000.0
+dart_IssuedCapitalOfCommonStock,보통주자본금,Ordinary shares,20221231,778047000000.0
+ifrs-full_SharePremium,주식발행초과금,Share premium,20221231,4403893000000.0
+ifrs-full_RetainedEarnings,이익잉여금,Retained earnings,20221231,337946407000000.0
+dart_ElementsOfOtherStockholdersEquity,기타자본항목,Other components of equity,20221231,1938328000000.0
+ifrs-full_NoncontrollingInterests,비지배지분,Non-controlling interests,20221231,9563462000000.0
+ifrs-full_Equity,자본총계,Total equity,20221231,354749604000000.0
+ifrs-full_EquityAndLiabilities,부채와자본총계,Equity and liabilities,20221231,448424507000000.0
+concept_id,label_ko,label_en,20211231,"('연결재무제표',)"
+ifrs-full_CurrentAssets,유동자산,Current assets,20211231,218163185000000.0
+ifrs-full_CashAndCashEquivalents,현금및현금성자산,Cash and cash equivalents,20211231,39031415000000.0
+ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,Short-term financial instruments,20211231,81708986000000.0
+ifrs-full_CurrentFinancialAssetsAtAmortisedCost,단기상각후원가금융자산,Short-term financial assets at fair value through profit or loss,20211231,3369034000000.0
+ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,단기당기손익-공정가치금융자산,Short-term financial assets at fair value through profit or loss,20211231,40757000000.0
+ifrs-full_CurrentTradeReceivables,매출채권,Trade receivables,20211231,40713415000000.0
+dart_ShortTermOtherReceivablesNet,미수금,Non-trade receivables,20211231,4497257000000.0
+ifrs-full_CurrentPrepaidExpenses,선급비용,Prepaid expenses,20211231,2336252000000.0
+ifrs-full_Inventories,재고자산,Inventories,20211231,41384404000000.0
+ifrs-full_OtherCurrentAssets,기타유동자산,Other current assets,20211231,5081665000000.0
+ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정분류자산,Assets held for sale,20211231,0.0
+ifrs-full_NoncurrentAssets,비유동자산,Non-current assets,20211231,208457973000000.0
+ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,Financial assets at fair value through other comprehensive income,20211231,13965839000000.0
+ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치금융자산,Financial assets at fair value through profit or loss,20211231,1525344000000.0
+ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업 투자,Investments in associates and joint ventures,20211231,8932251000000.0
+ifrs-full_PropertyPlantAndEquipment,유형자산,"Property, plant and equipment",20211231,149928539000000.0
+ifrs-full_IntangibleAssetsAndGoodwill,무형자산,Intangible assets,20211231,20236244000000.0
+ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,Net defined benefit assets,20211231,2809590000000.0
+ifrs-full_DeferredTaxAssets,이연법인세자산,Deferred income tax assets,20211231,4261214000000.0
+ifrs-full_OtherNoncurrentAssets,기타비유동자산,Other non-current assets,20211231,6798952000000.0
+ifrs-full_Assets,자산총계,Total assets,20211231,426621158000000.0
+ifrs-full_CurrentLiabilities,유동부채,Current liabilities,20211231,88117133000000.0
+ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,Trade payables,20211231,13453351000000.0
+entity00126380_CurrentLoansReceivedOfCurrentLiabilities,단기차입금,Current loans received,20211231,13687793000000.0
+ifrs-full_OtherCurrentPayables,미지급금,Other payables,20211231,15584866000000.0
+ifrs-full_CurrentAdvances,선수금,Advances received,20211231,1224812000000.0
+dart_ShortTermWithholdings,예수금,Withholdings,20211231,1294052000000.0
+ifrs-full_AccrualsClassifiedAsCurrent,미지급비용,Accrued expenses,20211231,27928031000000.0
+ifrs-full_CurrentTaxLiabilities,당기법인세부채,Current income tax liabilities,20211231,6749149000000.0
+ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,Current portion of long-term liabilities,20211231,1329968000000.0
+ifrs-full_CurrentProvisions,충당부채,Provisions,20211231,5372872000000.0
+ifrs-full_OtherCurrentLiabilities,기타유동부채,Other current liabilities,20211231,1492239000000.0
+ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정분류부채,Liabilities held-for-sale,20211231,0.0
+ifrs-full_NoncurrentLiabilities,비유동부채,Non-current liabilities,20211231,33604094000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,Debentures,20211231,508232000000.0
+ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,Long-term borrowings,20211231,2866156000000.0
+ifrs-full_OtherNoncurrentPayables,장기미지급금,Long-term other payables,20211231,2991440000000.0
+ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,Net defined benefit liabilities,20211231,465884000000.0
+ifrs-full_DeferredTaxLiabilities,이연법인세부채,Deferred income tax liabilities,20211231,23198205000000.0
+ifrs-full_NoncurrentProvisions,장기충당부채,Long-term provisions,20211231,2306994000000.0
+ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,Other non-current liabilities,20211231,1267183000000.0
+ifrs-full_Liabilities,부채총계,Total liabilities,20211231,121721227000000.0
+ifrs-full_EquityAttributableToOwnersOfParent,지배기업 소유주지분,Equity attributable to owners of parent company,20211231,296237697000000.0
+ifrs-full_IssuedCapital,자본금,Issued capital,20211231,897514000000.0
+dart_IssuedCapitalOfPreferredStock,우선주자본금,Preference shares,20211231,119467000000.0
+dart_IssuedCapitalOfCommonStock,보통주자본금,Ordinary shares,20211231,778047000000.0
+ifrs-full_SharePremium,주식발행초과금,Share premium,20211231,4403893000000.0
+ifrs-full_RetainedEarnings,이익잉여금,Retained earnings,20211231,293064763000000.0
+dart_ElementsOfOtherStockholdersEquity,기타자본항목,Other components of equity,20211231,-2128473000000.0
+ifrs-full_NoncontrollingInterests,비지배지분,Non-controlling interests,20211231,8662234000000.0
+ifrs-full_Equity,자본총계,Total equity,20211231,304899931000000.0
+ifrs-full_EquityAndLiabilities,부채와자본총계,Equity and liabilities,20211231,426621158000000.0

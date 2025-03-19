@@ -1,0 +1,165 @@
+﻿concept_id,label_ko,label_en,report_date,value
+concept_id,label_ko,label_en,20240101-20241231,"('연결재무제표',)"
+ifrs-full_CashFlowsFromUsedInOperatingActivities,영업활동현금흐름,Cash flows from (used in) operating activities,20240101-20241231,72982621000000.0
+ifrs-full_CashFlowsFromUsedInOperations,영업에서 창출된 현금흐름,Cash flows from (used in) operations,20240101-20241231,75830873000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20240101-20241231,34451351000000.0
+ifrs-full_AdjustmentsForReconcileProfitLoss,조정,Adjustments to reconcile profit (loss),20240101-20241231,42947079000000.0
+dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,영업활동으로 인한 자산부채의 변동,Adjustments for assets and liabilities of operating activities,20240101-20241231,-1567557000000.0
+ifrs-full_InterestReceivedClassifiedAsOperatingActivities,이자의 수취,Interest received,20240101-20241231,4008359000000.0
+ifrs-full_InterestPaidClassifiedAsOperatingActivities,이자의 지급,Interest paid,20240101-20241231,-675049000000.0
+ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,배당금 수입,Dividends received,20240101-20241231,268482000000.0
+ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,법인세 납부액,Income taxes paid,20240101-20241231,-6450044000000.0
+ifrs-full_CashFlowsFromUsedInInvestingActivities,투자활동현금흐름,Cash flows from (used in) investing activities,20240101-20241231,-85381702000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialInstrumentsOfCashFlowsFromUsedInInvestingActivities,단기금융상품의 순감소(증가),Net decrease (increase) in short-term financial instruments,20240101-20241231,-32976756000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtAmortizedCostOfCashFlowsFromUsedInInvestingActivities,단기상각후원가금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at amortized cost,20240101-20241231,620858000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtFairValueThroughProfitOrLossOfCashFlowsFromUsedInInvestingActivities,단기당기손익-공정가치금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at fair value through profit or loss,20240101-20241231,-9735000000.0
+dart_ProceedsFromSalesOfLongTermFinancialInstruments,장기금융상품의 처분,Disposal of long-term financial instruments,20240101-20241231,4100008000000.0
+dart_PurchaseOfLongTermFinancialInstruments,장기금융상품의 취득,Acquisition of long-term financial instruments,20240101-20241231,-3987279000000.0
+dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through other comprehensive income,20240101-20241231,389680000000.0
+dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through other comprehensive income,20240101-20241231,-185876000000.0
+dart_ProceedsFromSalesOfFairValueFinancialAsset,당기손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through profit or loss,20240101-20241231,309970000000.0
+dart_PurchaseOfFairValueFinancialAsset,당기손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through profit or loss,20240101-20241231,-70982000000.0
+ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 처분,Disposal of investment in associates and joint ventures,20240101-20241231,33178000000.0
+ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 취득,Acquisition of investment in associates and joint ventures,20240101-20241231,-11710000000.0
+ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 처분,"Disposal of property, plant and equipment",20240101-20241231,156191000000.0
+ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 취득,"Acquisition of property, plant and equipment",20240101-20241231,-51406355000000.0
+ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 처분,Disposal of intangible assets,20240101-20241231,15869000000.0
+ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 취득,Acquisition of intangible assets,20240101-20241231,-2335284000000.0
+ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 현금유출액,Cash outflows from business combinations,20240101-20241231,-142156000000.0
+dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정자산의 처분으로 인한 현금유입액,Proceeds from sales of non-current assets or disposal groups classified as held for sale,20240101-20241231,101563000000.0
+ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타투자활동으로 인한 현금유출입액,Cash outflow from other investing activities,20240101-20241231,17114000000.0
+ifrs-full_CashFlowsFromUsedInFinancingActivities,재무활동현금흐름,Cash flows from (used in) financing activities,20240101-20241231,-7797243000000.0
+ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,단기차입금의 순증가(감소),Cash flows from (used in) increase (decrease) in current borrowings,20240101-20241231,5871346000000.0
+dart_ProceedsFromLongTermBorrowings,장기차입금의 차입,Proceeds from long term borrowings,20240101-20241231,404954000000.0
+entity00126380_RepaymentsOfLongTermBorrowingsAndBondsOfCashFlowsFromUsedInFinancingActivities,사채 및 장기차입금의 상환,Repayments of long term borrowings and bonds,20240101-20241231,-1364508000000.0
+ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금의지급,Dividends paid,20240101-20241231,-10888749000000.0
+ifrs-full_PurchaseOfTreasuryShares,자기주식의 취득,Purchase of treasury shares,20240101-20241231,-1811775000000.0
+entity00126380_NetIncreaseDecreaseInNonControllingInterestsOfCashFlowsFromUsedInFinancingActivities,비지배지분의 증감,Net increase (decrease) in non-controlling interests,20240101-20241231,-8511000000.0
+entity00126380_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOfStatementOfCashFlowsAbstract,매각예정분류,Held for sale classification,20240101-20241231,0.0
+ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,외화환산으로 인한 현금의 변동,Effect of foreign exchange rate changes,20240101-20241231,4821010000000.0
+ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의 증가(감소),Increase (decrease) in cash and cash equivalents after effect of exchange rate changes,20240101-20241231,-15375314000000.0
+dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,기초현금및현금성자산,Cash and cash equivalents at beginning of period,20240101-20241231,69080893000000.0
+dart_CashAndCashEquivalentsAtEndOfPeriodCf,기말현금및현금성자산,Cash and cash equivalents at end of period,20240101-20241231,53705579000000.0
+concept_id,label_ko,label_en,20230101-20231231,"('연결재무제표',)"
+ifrs-full_CashFlowsFromUsedInOperatingActivities,영업활동현금흐름,Cash flows from (used in) operating activities,20230101-20231231,44137427000000.0
+ifrs-full_CashFlowsFromUsedInOperations,영업에서 창출된 현금흐름,Cash flows from (used in) operations,20230101-20231231,46547889000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20230101-20231231,15487100000000.0
+ifrs-full_AdjustmentsForReconcileProfitLoss,조정,Adjustments to reconcile profit (loss),20230101-20231231,36519534000000.0
+dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,영업활동으로 인한 자산부채의 변동,Adjustments for assets and liabilities of operating activities,20230101-20231231,-5458745000000.0
+ifrs-full_InterestReceivedClassifiedAsOperatingActivities,이자의 수취,Interest received,20230101-20231231,4786010000000.0
+ifrs-full_InterestPaidClassifiedAsOperatingActivities,이자의 지급,Interest paid,20230101-20231231,-844691000000.0
+ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,배당금 수입,Dividends received,20230101-20231231,269169000000.0
+ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,법인세 납부액,Income taxes paid,20230101-20231231,-6620950000000.0
+ifrs-full_CashFlowsFromUsedInInvestingActivities,투자활동현금흐름,Cash flows from (used in) investing activities,20230101-20231231,-16922817000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialInstrumentsOfCashFlowsFromUsedInInvestingActivities,단기금융상품의 순감소(증가),Net decrease (increase) in short-term financial instruments,20230101-20231231,39421565000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtAmortizedCostOfCashFlowsFromUsedInInvestingActivities,단기상각후원가금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at amortized cost,20230101-20231231,-195616000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtFairValueThroughProfitOrLossOfCashFlowsFromUsedInInvestingActivities,단기당기손익-공정가치금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at fair value through profit or loss,20230101-20231231,2718000000.0
+dart_ProceedsFromSalesOfLongTermFinancialInstruments,장기금융상품의 처분,Disposal of long-term financial instruments,20230101-20231231,4565426000000.0
+dart_PurchaseOfLongTermFinancialInstruments,장기금융상품의 취득,Acquisition of long-term financial instruments,20230101-20231231,-5307770000000.0
+dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through other comprehensive income,20230101-20231231,6521568000000.0
+dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through other comprehensive income,20230101-20231231,-124488000000.0
+dart_ProceedsFromSalesOfFairValueFinancialAsset,당기손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through profit or loss,20230101-20231231,63962000000.0
+dart_PurchaseOfFairValueFinancialAsset,당기손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through profit or loss,20230101-20231231,-130459000000.0
+ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 처분,Disposal of investment in associates and joint ventures,20230101-20231231,33457000000.0
+ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 취득,Acquisition of investment in associates and joint ventures,20230101-20231231,-78690000000.0
+ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 처분,"Disposal of property, plant and equipment",20230101-20231231,98341000000.0
+ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 취득,"Acquisition of property, plant and equipment",20230101-20231231,-57611292000000.0
+ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 처분,Disposal of intangible assets,20230101-20231231,11744000000.0
+ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 취득,Acquisition of intangible assets,20230101-20231231,-2922875000000.0
+ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 현금유출액,Cash outflows from business combinations,20230101-20231231,-356511000000.0
+dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정자산의 처분으로 인한 현금유입액,Proceeds from sales of non-current assets or disposal groups classified as held for sale,20230101-20231231,0.0
+ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타투자활동으로 인한 현금유출입액,Cash outflow from other investing activities,20230101-20231231,-913897000000.0
+ifrs-full_CashFlowsFromUsedInFinancingActivities,재무활동현금흐름,Cash flows from (used in) financing activities,20230101-20231231,-8593059000000.0
+ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,단기차입금의 순증가(감소),Cash flows from (used in) increase (decrease) in current borrowings,20230101-20231231,2145400000000.0
+dart_ProceedsFromLongTermBorrowings,장기차입금의 차입,Proceeds from long term borrowings,20230101-20231231,354712000000.0
+entity00126380_RepaymentsOfLongTermBorrowingsAndBondsOfCashFlowsFromUsedInFinancingActivities,사채 및 장기차입금의 상환,Repayments of long term borrowings and bonds,20230101-20231231,-1219579000000.0
+ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금의지급,Dividends paid,20230101-20231231,-9864474000000.0
+ifrs-full_PurchaseOfTreasuryShares,자기주식의 취득,Purchase of treasury shares,20230101-20231231,0.0
+entity00126380_NetIncreaseDecreaseInNonControllingInterestsOfCashFlowsFromUsedInFinancingActivities,비지배지분의 증감,Net increase (decrease) in non-controlling interests,20230101-20231231,-9118000000.0
+entity00126380_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOfStatementOfCashFlowsAbstract,매각예정분류,Held for sale classification,20230101-20231231,-14153000000.0
+ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,외화환산으로 인한 현금의 변동,Effect of foreign exchange rate changes,20230101-20231231,792785000000.0
+ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의 증가(감소),Increase (decrease) in cash and cash equivalents after effect of exchange rate changes,20230101-20231231,19400183000000.0
+dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,기초현금및현금성자산,Cash and cash equivalents at beginning of period,20230101-20231231,49680710000000.0
+dart_CashAndCashEquivalentsAtEndOfPeriodCf,기말현금및현금성자산,Cash and cash equivalents at end of period,20230101-20231231,69080893000000.0
+concept_id,label_ko,label_en,20220101-20221231,"('연결재무제표',)"
+ifrs-full_CashFlowsFromUsedInOperatingActivities,영업활동현금흐름,Cash flows from (used in) operating activities,20220101-20221231,62181346000000.0
+ifrs-full_CashFlowsFromUsedInOperations,영업에서 창출된 현금흐름,Cash flows from (used in) operations,20220101-20221231,71728568000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20220101-20221231,55654077000000.0
+ifrs-full_AdjustmentsForReconcileProfitLoss,조정,Adjustments to reconcile profit (loss),20220101-20221231,33073439000000.0
+dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,영업활동으로 인한 자산부채의 변동,Adjustments for assets and liabilities of operating activities,20220101-20221231,-16998948000000.0
+ifrs-full_InterestReceivedClassifiedAsOperatingActivities,이자의 수취,Interest received,20220101-20221231,2136795000000.0
+ifrs-full_InterestPaidClassifiedAsOperatingActivities,이자의 지급,Interest paid,20220101-20221231,-714543000000.0
+ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,배당금 수입,Dividends received,20220101-20221231,529421000000.0
+ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,법인세 납부액,Income taxes paid,20220101-20221231,-11498895000000.0
+ifrs-full_CashFlowsFromUsedInInvestingActivities,투자활동현금흐름,Cash flows from (used in) investing activities,20220101-20221231,-31602804000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialInstrumentsOfCashFlowsFromUsedInInvestingActivities,단기금융상품의 순감소(증가),Net decrease (increase) in short-term financial instruments,20220101-20221231,15214321000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtAmortizedCostOfCashFlowsFromUsedInInvestingActivities,단기상각후원가금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at amortized cost,20220101-20221231,3050104000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtFairValueThroughProfitOrLossOfCashFlowsFromUsedInInvestingActivities,단기당기손익-공정가치금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at fair value through profit or loss,20220101-20221231,11677000000.0
+dart_ProceedsFromSalesOfLongTermFinancialInstruments,장기금융상품의 처분,Disposal of long-term financial instruments,20220101-20221231,8272909000000.0
+dart_PurchaseOfLongTermFinancialInstruments,장기금융상품의 취득,Acquisition of long-term financial instruments,20220101-20221231,-4393754000000.0
+dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through other comprehensive income,20220101-20221231,496090000000.0
+dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through other comprehensive income,20220101-20221231,-37687000000.0
+dart_ProceedsFromSalesOfFairValueFinancialAsset,당기손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through profit or loss,20220101-20221231,166315000000.0
+dart_PurchaseOfFairValueFinancialAsset,당기손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through profit or loss,20220101-20221231,-158244000000.0
+ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 처분,Disposal of investment in associates and joint ventures,20220101-20221231,13233000000.0
+ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 취득,Acquisition of investment in associates and joint ventures,20220101-20221231,-907958000000.0
+ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 처분,"Disposal of property, plant and equipment",20220101-20221231,217878000000.0
+ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 취득,"Acquisition of property, plant and equipment",20220101-20221231,-49430428000000.0
+ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 처분,Disposal of intangible assets,20220101-20221231,23462000000.0
+ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 취득,Acquisition of intangible assets,20220101-20221231,-3696304000000.0
+ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 현금유출액,Cash outflows from business combinations,20220101-20221231,-31383000000.0
+dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정자산의 처분으로 인한 현금유입액,Proceeds from sales of non-current assets or disposal groups classified as held for sale,20220101-20221231,0.0
+ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타투자활동으로 인한 현금유출입액,Cash outflow from other investing activities,20220101-20221231,-413035000000.0
+ifrs-full_CashFlowsFromUsedInFinancingActivities,재무활동현금흐름,Cash flows from (used in) financing activities,20220101-20221231,-19390049000000.0
+ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,단기차입금의 순증가(감소),Cash flows from (used in) increase (decrease) in current borrowings,20220101-20221231,-8339149000000.0
+dart_ProceedsFromLongTermBorrowings,장기차입금의 차입,Proceeds from long term borrowings,20220101-20221231,271997000000.0
+entity00126380_RepaymentsOfLongTermBorrowingsAndBondsOfCashFlowsFromUsedInFinancingActivities,사채 및 장기차입금의 상환,Repayments of long term borrowings and bonds,20220101-20221231,-1508465000000.0
+ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금의지급,Dividends paid,20220101-20221231,-9814426000000.0
+ifrs-full_PurchaseOfTreasuryShares,자기주식의 취득,Purchase of treasury shares,20220101-20221231,0.0
+entity00126380_NetIncreaseDecreaseInNonControllingInterestsOfCashFlowsFromUsedInFinancingActivities,비지배지분의 증감,Net increase (decrease) in non-controlling interests,20220101-20221231,-6000000.0
+entity00126380_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOfStatementOfCashFlowsAbstract,매각예정분류,Held for sale classification,20220101-20221231,0.0
+ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,외화환산으로 인한 현금의 변동,Effect of foreign exchange rate changes,20220101-20221231,-539198000000.0
+ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의 증가(감소),Increase (decrease) in cash and cash equivalents after effect of exchange rate changes,20220101-20221231,10649295000000.0
+dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,기초현금및현금성자산,Cash and cash equivalents at beginning of period,20220101-20221231,39031415000000.0
+dart_CashAndCashEquivalentsAtEndOfPeriodCf,기말현금및현금성자산,Cash and cash equivalents at end of period,20220101-20221231,49680710000000.0
+concept_id,label_ko,label_en,20210101-20211231,"('연결재무제표',)"
+ifrs-full_CashFlowsFromUsedInOperatingActivities,영업활동현금흐름,Cash flows from (used in) operating activities,20210101-20211231,65105448000000.0
+ifrs-full_CashFlowsFromUsedInOperations,영업에서 창출된 현금흐름,Cash flows from (used in) operations,20210101-20211231,72676199000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20210101-20211231,39907450000000.0
+ifrs-full_AdjustmentsForReconcileProfitLoss,조정,Adjustments to reconcile profit (loss),20210101-20211231,49055633000000.0
+dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,영업활동으로 인한 자산부채의 변동,Adjustments for assets and liabilities of operating activities,20210101-20211231,-16286884000000.0
+ifrs-full_InterestReceivedClassifiedAsOperatingActivities,이자의 수취,Interest received,20210101-20211231,1406706000000.0
+ifrs-full_InterestPaidClassifiedAsOperatingActivities,이자의 지급,Interest paid,20210101-20211231,-434441000000.0
+ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,배당금 수입,Dividends received,20210101-20211231,299033000000.0
+ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,법인세 납부액,Income taxes paid,20210101-20211231,-8842049000000.0
+ifrs-full_CashFlowsFromUsedInInvestingActivities,투자활동현금흐름,Cash flows from (used in) investing activities,20210101-20211231,-33047763000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialInstrumentsOfCashFlowsFromUsedInInvestingActivities,단기금융상품의 순감소(증가),Net decrease (increase) in short-term financial instruments,20210101-20211231,10917128000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtAmortizedCostOfCashFlowsFromUsedInInvestingActivities,단기상각후원가금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at amortized cost,20210101-20211231,-336959000000.0
+entity00126380_NetDecreaseIncreaseInShortTermFinancialAssetsAtFairValueThroughProfitOrLossOfCashFlowsFromUsedInInvestingActivities,단기당기손익-공정가치금융자산의 순감소(증가),Net decrease (increase) in short-term financial assets at fair value through profit or loss,20210101-20211231,30694000000.0
+dart_ProceedsFromSalesOfLongTermFinancialInstruments,장기금융상품의 처분,Disposal of long-term financial instruments,20210101-20211231,10216082000000.0
+dart_PurchaseOfLongTermFinancialInstruments,장기금융상품의 취득,Acquisition of long-term financial instruments,20210101-20211231,-6981810000000.0
+dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through other comprehensive income,20210101-20211231,2919888000000.0
+dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through other comprehensive income,20210101-20211231,-1121201000000.0
+dart_ProceedsFromSalesOfFairValueFinancialAsset,당기손익-공정가치금융자산의 처분,Disposal of financial assets at fair value through profit or loss,20210101-20211231,350212000000.0
+dart_PurchaseOfFairValueFinancialAsset,당기손익-공정가치금융자산의 취득,Acquisition of financial assets at fair value through profit or loss,20210101-20211231,-208262000000.0
+ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 처분,Disposal of investment in associates and joint ventures,20210101-20211231,19169000000.0
+ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 취득,Acquisition of investment in associates and joint ventures,20210101-20211231,-47090000000.0
+ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 처분,"Disposal of property, plant and equipment",20210101-20211231,358284000000.0
+ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 취득,"Acquisition of property, plant and equipment",20210101-20211231,-47122106000000.0
+ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 처분,Disposal of intangible assets,20210101-20211231,1752000000.0
+ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 취득,Acquisition of intangible assets,20210101-20211231,-2706915000000.0
+ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 현금유출액,Cash outflows from business combinations,20210101-20211231,-5926000000.0
+dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정자산의 처분으로 인한 현금유입액,Proceeds from sales of non-current assets or disposal groups classified as held for sale,20210101-20211231,661168000000.0
+ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타투자활동으로 인한 현금유출입액,Cash outflow from other investing activities,20210101-20211231,8129000000.0
+ifrs-full_CashFlowsFromUsedInFinancingActivities,재무활동현금흐름,Cash flows from (used in) financing activities,20210101-20211231,-23991033000000.0
+ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,단기차입금의 순증가(감소),Cash flows from (used in) increase (decrease) in current borrowings,20210101-20211231,-2616943000000.0
+dart_ProceedsFromLongTermBorrowings,장기차입금의 차입,Proceeds from long term borrowings,20210101-20211231,58279000000.0
+entity00126380_RepaymentsOfLongTermBorrowingsAndBondsOfCashFlowsFromUsedInFinancingActivities,사채 및 장기차입금의 상환,Repayments of long term borrowings and bonds,20210101-20211231,-894749000000.0
+ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금의지급,Dividends paid,20210101-20211231,-20510350000000.0
+ifrs-full_PurchaseOfTreasuryShares,자기주식의 취득,Purchase of treasury shares,20210101-20211231,
+entity00126380_NetIncreaseDecreaseInNonControllingInterestsOfCashFlowsFromUsedInFinancingActivities,비지배지분의 증감,Net increase (decrease) in non-controlling interests,20210101-20211231,-27270000000.0
+entity00126380_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOfStatementOfCashFlowsAbstract,매각예정분류,Held for sale classification,20210101-20211231,139000000.0
+ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,외화환산으로 인한 현금의 변동,Effect of foreign exchange rate changes,20210101-20211231,1582046000000.0
+ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의 증가(감소),Increase (decrease) in cash and cash equivalents after effect of exchange rate changes,20210101-20211231,9648837000000.0
+dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,기초현금및현금성자산,Cash and cash equivalents at beginning of period,20210101-20211231,29382578000000.0
+dart_CashAndCashEquivalentsAtEndOfPeriodCf,기말현금및현금성자산,Cash and cash equivalents at end of period,20210101-20211231,39031415000000.0

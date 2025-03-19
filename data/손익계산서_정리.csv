@@ -1,0 +1,73 @@
+﻿concept_id,label_ko,label_en,report_date,value
+concept_id,label_ko,label_en,20240101-20241231,"('연결재무제표',)"
+ifrs-full_Revenue,매출액,Revenue,20240101-20241231,300870903000000.0
+ifrs-full_CostOfSales,매출원가,Cost of sales,20240101-20241231,186562268000000.0
+ifrs-full_GrossProfit,매출총이익,Gross profit,20240101-20241231,114308635000000.0
+dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,Selling general administrative expenses,20240101-20241231,81582674000000.0
+dart_OperatingIncomeLoss,영업이익,Operating profit,20240101-20241231,32725961000000.0
+dart_OtherGains,기타수익,Other gains,20240101-20241231,1960338000000.0
+dart_OtherLosses,기타비용,Other losses,20240101-20241231,1625229000000.0
+ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법이익,Share of net profit of associates and joint ventures,20240101-20241231,751044000000.0
+ifrs-full_FinanceIncome,금융수익,Financial income,20240101-20241231,16703304000000.0
+ifrs-full_FinanceCosts,금융비용,Financial expense,20240101-20241231,12985684000000.0
+ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,Profit (loss) before tax,20240101-20241231,37529734000000.0
+ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),Income tax expense (benefit),20240101-20241231,3078383000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20240101-20241231,34451351000000.0
+ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유지분,"Profit (loss), attributable to owners of parent",20240101-20241231,33621363000000.0
+ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,Profit attributable to Non-controlling interests,20240101-20241231,829988000000.0
+ifrs-full_BasicEarningsLossPerShare,기본주당이익,-Basic,20240101-20241231,4950.0
+ifrs-full_DilutedEarningsLossPerShare,희석주당이익,-Diluted,20240101-20241231,4950.0
+concept_id,label_ko,label_en,20230101-20231231,"('연결재무제표',)"
+ifrs-full_Revenue,매출액,Revenue,20230101-20231231,258935494000000.0
+ifrs-full_CostOfSales,매출원가,Cost of sales,20230101-20231231,180388580000000.0
+ifrs-full_GrossProfit,매출총이익,Gross profit,20230101-20231231,78546914000000.0
+dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,Selling general administrative expenses,20230101-20231231,71979938000000.0
+dart_OperatingIncomeLoss,영업이익,Operating profit,20230101-20231231,6566976000000.0
+dart_OtherGains,기타수익,Other gains,20230101-20231231,1180448000000.0
+dart_OtherLosses,기타비용,Other losses,20230101-20231231,1083327000000.0
+ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법이익,Share of net profit of associates and joint ventures,20230101-20231231,887550000000.0
+ifrs-full_FinanceIncome,금융수익,Financial income,20230101-20231231,16100148000000.0
+ifrs-full_FinanceCosts,금융비용,Financial expense,20230101-20231231,12645530000000.0
+ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,Profit (loss) before tax,20230101-20231231,11006265000000.0
+ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),Income tax expense (benefit),20230101-20231231,-4480835000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20230101-20231231,15487100000000.0
+ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유지분,"Profit (loss), attributable to owners of parent",20230101-20231231,14473401000000.0
+ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,Profit attributable to Non-controlling interests,20230101-20231231,1013699000000.0
+ifrs-full_BasicEarningsLossPerShare,기본주당이익,-Basic,20230101-20231231,2131.0
+ifrs-full_DilutedEarningsLossPerShare,희석주당이익,-Diluted,20230101-20231231,2131.0
+concept_id,label_ko,label_en,20220101-20221231,"('연결재무제표',)"
+ifrs-full_Revenue,매출액,Revenue,20220101-20221231,302231360000000.0
+ifrs-full_CostOfSales,매출원가,Cost of sales,20220101-20221231,190041770000000.0
+ifrs-full_GrossProfit,매출총이익,Gross profit,20220101-20221231,112189590000000.0
+dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,Selling general administrative expenses,20220101-20221231,68812960000000.0
+dart_OperatingIncomeLoss,영업이익,Operating profit,20220101-20221231,43376630000000.0
+dart_OtherGains,기타수익,Other gains,20220101-20221231,1962071000000.0
+dart_OtherLosses,기타비용,Other losses,20220101-20221231,1790176000000.0
+ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법이익,Share of net profit of associates and joint ventures,20220101-20221231,1090643000000.0
+ifrs-full_FinanceIncome,금융수익,Financial income,20220101-20221231,20828995000000.0
+ifrs-full_FinanceCosts,금융비용,Financial expense,20220101-20221231,19027689000000.0
+ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,Profit (loss) before tax,20220101-20221231,46440474000000.0
+ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),Income tax expense (benefit),20220101-20221231,-9213603000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20220101-20221231,55654077000000.0
+ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유지분,"Profit (loss), attributable to owners of parent",20220101-20221231,54730018000000.0
+ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,Profit attributable to Non-controlling interests,20220101-20221231,924059000000.0
+ifrs-full_BasicEarningsLossPerShare,기본주당이익,-Basic,20220101-20221231,8057.0
+ifrs-full_DilutedEarningsLossPerShare,희석주당이익,-Diluted,20220101-20221231,8057.0
+concept_id,label_ko,label_en,20210101-20211231,"('연결재무제표',)"
+ifrs-full_Revenue,매출액,Revenue,20210101-20211231,279604799000000.0
+ifrs-full_CostOfSales,매출원가,Cost of sales,20210101-20211231,166411342000000.0
+ifrs-full_GrossProfit,매출총이익,Gross profit,20210101-20211231,113193457000000.0
+dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,Selling general administrative expenses,20210101-20211231,61559601000000.0
+dart_OperatingIncomeLoss,영업이익,Operating profit,20210101-20211231,51633856000000.0
+dart_OtherGains,기타수익,Other gains,20210101-20211231,2205695000000.0
+dart_OtherLosses,기타비용,Other losses,20210101-20211231,2055971000000.0
+ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법이익,Share of net profit of associates and joint ventures,20210101-20211231,729614000000.0
+ifrs-full_FinanceIncome,금융수익,Financial income,20210101-20211231,8543187000000.0
+ifrs-full_FinanceCosts,금융비용,Financial expense,20210101-20211231,7704554000000.0
+ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,Profit (loss) before tax,20210101-20211231,53351827000000.0
+ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),Income tax expense (benefit),20210101-20211231,13444377000000.0
+ifrs-full_ProfitLoss,당기순이익,Profit,20210101-20211231,39907450000000.0
+ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유지분,"Profit (loss), attributable to owners of parent",20210101-20211231,39243791000000.0
+ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,Profit attributable to Non-controlling interests,20210101-20211231,663659000000.0
+ifrs-full_BasicEarningsLossPerShare,기본주당이익,-Basic,20210101-20211231,5777.0
+ifrs-full_DilutedEarningsLossPerShare,희석주당이익,-Diluted,20210101-20211231,5777.0
