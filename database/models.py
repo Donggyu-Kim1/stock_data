@@ -121,7 +121,7 @@ class FinancialRatio(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     company_id = Column(Integer, nullable=False)  # 기업 ID (논리적 관계만 유지)
-    report_date = Column(Date, nullable=False)  # 보고서 기준일
+    fiscal_year = Column(Integer, nullable=False)  # 회계연도
 
     # 안정성 지표
     current_ratio = Column(DECIMAL(10, 2))  # 유동비율
@@ -132,9 +132,56 @@ class FinancialRatio(Base):
     debt_dependency = Column(DECIMAL(10, 2))  # 차입금의존도
     interest_coverage = Column(DECIMAL(10, 2))  # 이자보상배율
 
+    # 수익성 지표
+    gross_margin = Column(DECIMAL(10, 2))  # 매출총이익률
+    ros = Column(DECIMAL(10, 2))  # 매출액순이익률 (ROS)
+    roa = Column(DECIMAL(10, 2))  # 총자산영업이익률 (ROA)
+    roe = Column(DECIMAL(10, 2))  # 자기자본순이익률 (ROE)
+
+    # 활동성 지표
+    asset_turnover = Column(DECIMAL(10, 2))  # 총자산회전율
+    equity_turnover = Column(DECIMAL(10, 2))  # 자기자본회전율
+    inventory_turnover = Column(DECIMAL(10, 2))  # 재고자산회전율
+
+    # 성장성 지표
+    revenue_growth = Column(DECIMAL(10, 2))  # 매출액 증가율
+    asset_growth = Column(DECIMAL(10, 2))  # 총자산 증가율
+    equity_growth = Column(DECIMAL(10, 2))  # 자기자본 증가율
+    sustainable_growth = Column(DECIMAL(10, 2))  # 지속가능성장률
+
     # UNIQUE KEY 추가 (company_id + report_date)
     __table_args__ = (
         UniqueConstraint(
             "company_id", "report_date", name="uq_company_financial_ratios"
         ),
+    )
+
+
+# 7️⃣ 기업 가치 평가 테이블
+class ValuationMetric(Base):
+    __tablename__ = "valuation_metrics"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    company_id = Column(Integer, nullable=False)  # 기업 ID (논리적 관계만 유지)
+    date = Column(Date, nullable=False)  # 평가 기준일
+
+    # 기본 밸류에이션 지표
+    market_cap = Column(BigInteger)  # 시가총액
+    per = Column(DECIMAL(10, 2))  # 주가수익비율 (PER)
+    peg_ratio = Column(DECIMAL(10, 2))  # PEG Ratio
+    pbr = Column(DECIMAL(10, 2))  # 주가순자산비율 (PBR)
+    psr = Column(DECIMAL(10, 2))  # 주가매출비율 (PSR)
+    ev_ebitda = Column(DECIMAL(10, 2))  # EV/EBITDA
+    fcf = Column(BigInteger)  # Free Cash Flow (FCF)
+    beta = Column(DECIMAL(10, 2))  # 베타값
+
+    # 추가적인 밸류에이션 계산 요소
+    risk_free_rate = Column(DECIMAL(10, 4))  # 무위험자산수익률
+    market_risk_premium = Column(DECIMAL(10, 4))  # 시장 위험 프리미엄
+    cost_of_equity = Column(DECIMAL(10, 4))  # 자기자본 비용 (CARM)
+    wacc = Column(DECIMAL(10, 4))  # 가중평균자본비용 (WACC)
+
+    # UNIQUE KEY 추가 (company_id + date)
+    __table_args__ = (
+        UniqueConstraint("company_id", "date", name="uq_company_valuation_date"),
     )

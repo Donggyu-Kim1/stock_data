@@ -76,7 +76,7 @@ CREATE TABLE financial_statements (
 CREATE TABLE financial_ratios (
     id                   INT AUTO_INCREMENT PRIMARY KEY,
     company_id           INT NOT NULL,  
-    report_date          DATE NOT NULL,  
+    fiscal_year          DATE NOT NULL,  -- 회계연도
 
     -- 안정성 (Liquidity & Solvency)
     current_ratio        DECIMAL(10,2), -- 유동비율
@@ -140,5 +140,35 @@ CREATE TABLE benchmark_prices (
 
     -- 중복 방지
     UNIQUE (benchmark_id, date)
+);
+```
+
+# 7. 기업 가치 평가 테이블 (valuation_metrics)
+
+```sql
+-- 기업의 가치 평가 관련 데이터를 저장하는 테이블.
+CREATE TABLE valuation_metrics (
+    id                     INT AUTO_INCREMENT PRIMARY KEY,
+    company_id             INT NOT NULL,  -- 기업 ID (논리적 관계만 유지)
+    date                   DATE NOT NULL,  -- 평가 기준일
+
+    -- 기본 밸류에이션 지표
+    market_cap             BIGINT,        -- 시가총액
+    per                    DECIMAL(10,2), -- 주가수익비율 (PER)
+    peg_ratio              DECIMAL(10,2), -- PEG Ratio
+    pbr                    DECIMAL(10,2), -- 주가순자산비율 (PBR)
+    psr                    DECIMAL(10,2), -- 주가매출비율 (PSR)
+    ev_ebitda              DECIMAL(10,2), -- EV/EBITDA
+    fcf                    BIGINT,        -- Free Cash Flow (FCF)
+    beta                   DECIMAL(10,2), -- 베타값
+
+    -- 추가적인 밸류에이션 계산 요소
+    risk_free_rate         DECIMAL(10,4), -- 무위험자산수익률
+    market_risk_premium    DECIMAL(10,4), -- 시장 위험 프리미엄
+    cost_of_equity         DECIMAL(10,4), -- 자기자본 비용 (CARM)
+    wacc                   DECIMAL(10,4), -- 가중평균자본비용 (WACC)
+
+    -- 중복 방지
+    UNIQUE (company_id, date)
 );
 ```

@@ -83,9 +83,6 @@ erDiagram
         decimal market_risk_premium "시장 위험 프리미엄"
         decimal cost_of_equity "자기자본 비용 (CARM)"
         decimal wacc "가중평균자본비용 (WACC)"
-        decimal ddm "배당할인모형 (DDM)"
-        decimal dcf "현금흐름할인모형 (DCF)"
-        decimal eva "경제적 부가가치 (EVA)"
     }
 
     BENCHMARK_INDICES {
